@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Error Page</title>
+	<object th:include="fragments/fragment :: css" th:remove="tag"></object>
+	<object th:include="fragments/fragment :: js" th:remove="tag"></object>
+</head>
+
+<body>
+	<nav th:replace="fragments/fragment :: navbar ('Error')"></nav>
+	<div class="alert alert-danger">
+  		<strong>Error!</strong> UPS ada ERROR, Silahkan input kembali.
+	</div>
+</body>
+</html>
